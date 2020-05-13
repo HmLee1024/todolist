@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { MuiPickersUtilsProvider } from '@material-ui/pickers';
+import MomentUtiles from '@date-io/moment';
+import 'moment/locale/ko'
+import moment from 'moment';
+
+moment.locale('ko');
 
 ReactDOM.render(
-  <React.StrictMode>
+  <MuiPickersUtilsProvider utils={MomentUtiles}>
     <App />
-  </React.StrictMode>,
+  </MuiPickersUtilsProvider>,
   document.getElementById('root')
 );
 
