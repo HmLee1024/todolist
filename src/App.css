@@ -14,16 +14,19 @@ body,
    align-items: center;
    justify-content: center;
 }
+
 .header {
    padding: 10px;
    font-size: calc(20px + 2vmin);
 }
+
 .input-area {
    background-color: rgb(237, 247, 253);
    width: 45%;
    min-width: 300px;
    border: 1px solid rgba(192, 192, 192, 0.541);
 }
+
 .list-area {
    border: 1px solid rgba(138, 138, 138, 0.432);
    width: 45%;
